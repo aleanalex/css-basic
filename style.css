@@ -1,0 +1,367 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container
+{
+    margin-top: 5rem;
+    clear: both;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+h3
+{
+    font-size: 3rem;
+    margin-top: 3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+h5 a 
+{
+    font-size: 32px;
+    color: red;
+
+}
+
+.border
+{
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+}
+
+.border1 
+{
+    border-left: 5px solid red;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    background: rgb(235, 235, 235);
+}
+
+.border2
+{
+    border-right: 5px solid red;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+.p-border
+{
+    width: 150px;
+    background-color: aqua;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.one
+{
+    border-radius: 10px;
+}
+
+.two
+{
+    border-radius: 12px 3px;
+}
+
+.three
+{
+    border-radius: 0px 10px 0px 10px;
+}
+
+.polygon
+{
+    background-color: orangered;
+    color: white;
+    clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);
+}
+
+.polygon1
+{
+    background-color: orangered;
+    color: white;
+    clip-path: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
+}
+
+.polygon2
+{
+    background-color: orangered;
+    color: white;
+    clip-path:polygon(0 0, 100% 0%, 100% 100%, 18% 100%);
+}
+
+.polygon3
+{
+    background-color: orangered;
+    color: white;
+    clip-path:polygon(96% 0, 100% 36%, 100% 100%, 4% 100%, 0 66%, 0 0);
+}
+
+.margin
+{
+    margin: 20px 2px 2px 10px;
+    float: left;
+    background-color: rgb(169, 168, 170);
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    
+}
+
+
+.height
+{
+    height: 300px;
+    max-width: 900px;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(137, 137, 137);
+    padding-top: 8rem;
+    margin-top: 4rem;
+}
+
+.height1
+{
+    height: 300px;
+    width: 900px;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(137, 137, 137);
+    padding-top: 8rem;
+    margin-top: 4rem;
+}
+
+.height2
+{
+    height: 300px;
+    min-width: 900px;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(137, 137, 137);
+    padding-top: 8rem;
+    margin-top: 4rem;
+}
+
+h5
+{
+    font-size: large;
+    color: red;
+}
+
+.indent
+{
+    text-indent: 100px;
+}
+
+
+.letter
+{
+    letter-spacing: 3px;
+}
+
+.word
+{
+    word-spacing: 5px;
+}
+
+.line-height
+{
+    line-height: 39px;
+}
+
+.white-space
+{
+    white-space: 11px;
+}
+
+.shadow
+{
+    text-shadow: 2px 2px 5px red;
+}
+
+.shadow1
+{
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+
+#public
+{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+#public td, #public th
+{
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+#public tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+#public tr:hover, tr:active
+{
+    background: #ddd;
+}
+
+#public th 
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #afafaf;
+
+}
+
+
+.sticky
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    background-color: rgba(226, 226, 226, 0.73);
+    backdrop-filter: blur(3px);
+    margin: -3rem;
+}
+
+.checkbox
+{
+    font-size:1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=checkbox] 
+{
+    accent-color: red;
+}
+
+
+input[type=radio]
+{
+    accent-color: red;
+}
+
+input[type=range]
+{
+    accent-color: red;
+}
+
+
+progress
+{
+    accent-color: red;
+}
+
+
+
+
+
+/*--------------- CSS Align Style------------- */
+
+
+
+.align
+{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    border: 1px solid rgb(145, 145, 145);
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.box 
+{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 28px;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.align2
+{
+    align-content: stretch;
+}
+
+.align3
+{
+    align-content: flex-start;
+}
+
+.align4
+{
+    align-content: flex-end;
+}
+
+.align5
+{
+    align-content: space-between;
+}
+
+.align6
+{
+    align-content: space-around;
+}
+
+.align7
+{
+    align-content: space-evenly;
+}
+
+.align5
+{
+    align-content: flex-start;
+}
+
+
+
+
+/* Align Items */
+
+.items 
+{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.box2 
+{
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 28px;
+    border: 1px solid white;
+    display: flex;
+}
