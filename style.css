@@ -8,6 +8,7 @@
 body
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #eaeaea66;
 }
 
 .container
@@ -348,20 +349,355 @@ progress
 
 .items 
 {
-    width: 100%;
-    height: auto;
-    margin-top: 3rem;
+    width: 50%;
+    height: 300px;
+    border: 1px solid red;
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
 }
 
-.box2 
+.box1
 {
-    flex: 1;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-    padding: 28px;
-    border: 1px solid white;
+    /* flex: 1;
+    border: 1px solid black;
     display: flex;
+    align-items: center; */
+    width: 34%;
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: #afafaf;
+}
+
+.box2
+{
+    /* flex: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center; */
+    width: 33%;
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: #ddd;
+}
+
+
+.box3
+{
+    /* flex: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center; */
+    width: 33%;
+    border: 1px solid black;
+    padding: 2rem;
+    /* align-items: center; */
+}
+
+.self 
+{
+    width: 50%;
+    height: 300px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.box4
+{
+    height:50px;
+    background: red;
+    width: 30%;
+    /* align-self: stretch; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: baseline; */
+    align-self: center;
+    margin-left: 3rem;
+}
+
+/* Create Animation */
+
+
+.anim
+{
+    width: 100%;
+    height: 400px;
+}
+
+.box5
+{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    animation: lastmove 5s infinite;
+    border-radius: 5px 0;
+}
+
+@keyframes move {
+    from{left: 0px;}
+    to{left: 70%;}
+}
+
+@keyframes othermove {
+    from{top: 0px;}
+    to{top: 400px;}
+}
+
+@keyframes lastmove {
+    from
+    {
+        top: 0px;
+        background-color: #afafaf;
+    
+    }
+    to
+    {
+        top: 380px;
+        background-color: #f2f2f2;
+    }
+
+
+}
+
+
+
+/* Aspect Ratio */
+
+.aspect
+{
+    position: relative;
+    height: 250px;
+    width: 90%;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.box6 
+{
+    padding: 70px;
+    position: absolute;
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.4rem;
+    aspect-ratio: 1/1;
+    align-content: center;
+}
+
+
+.bg
+{
+    background: url(https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bg1
+{
+    
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: sepia(100%);
+    margin: 2rem;
+
+}
+
+.bg2
+{
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    margin: 2rem;
+}
+
+.bg3
+{
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: brightness(60%);
+    margin: 2rem;
+}
+
+.bg4
+{
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: grayscale(100%);
+    margin: 2rem;
+}
+
+.bg5
+{
+
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: hue-rotate(180deg);
+    margin: 2rem;
+}
+
+.bg6
+{
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: invert(80%);
+    margin: 2rem;
+}
+
+.bg7
+{
+
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: opacity(50%);
+    margin: 2rem;
+}
+
+.bg8
+{
+
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: saturate(7);
+    margin: 2rem;
+}
+
+.bg9
+{
+
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: drop-shadow(8px 8px 10px green);
+    margin: 2rem;
+}
+
+.bg10
+{
+
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 2rem;
+}
+
+.bg11
+{
+    height: 8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: contrast(180%);
+    margin: 2rem;
+}
+
+
+.btn
+{
+    padding: 12px 23px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 1.2rem;
+    width: 134px;
+    text-align: center;
+    margin: 6rem;
+}
+
+.btn1
+{
+    -webkit-box-reflect: left 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
+}
+
+.btn2
+{
+    -webkit-box-reflect: right 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
+}
+
+.btn3
+{
+    -webkit-box-reflect: above 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
+}
+
+.btn4
+{
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
+}
+
+.link
+{
+    font-size: 2rem;
+    color: rgba(104, 104, 104, 0.934);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    transition: all 0.4s ease;
+}
+
+.link:hover
+{
+    color: red;
+    text-shadow: 0px 1px 40px rgba(173, 19, 19, 0.462);
+}
+
+
+.caretcolor
+{
+    caret-color: #ff0000;
+    font-size: 3rem;
+}
+
+
+img
+{
+    float: left;
+}
+
+.clear
+{
+    clear: left;
+}
+
+.column-count
+{
+    font-size: 1.2rem;
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 5rem;
+    column-rule: 1px solid red;
+}
+
+.flex-box
+{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    padding: 2rem;
+}
+
+
+
+.flex-box > div 
+{
+   background-color: #ddd;
+   width: 10%;
+    aspect-ratio: 2;
+    padding: 10px;
+    text-align: center;
+    margin-top: 3rem;
 }
